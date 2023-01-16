@@ -20,7 +20,11 @@ public class TestsDossierBancaire {
 		{
 			DossierBancaire dossier=new DossierBancaire();
 			dossier.deposer(100);
-			assertEquals(100,dossier.get_solde(),0); //voir documentation en ligne sur assertions Junit 
+			assertEquals(100,dossier.get_solde(),0); //voir documentation en ligne sur assertions Junit
+			
+			CompteCourant compte=new CompteCourant();
+			compte.setSolde(100);
+			assertEquals(100,compte.getSolde(),0);
 		}
 		
 	}

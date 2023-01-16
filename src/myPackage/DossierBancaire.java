@@ -4,10 +4,7 @@ public class DossierBancaire {
 	private CompteCourant CC_solde= new CompteCourant();
 	private CompteEpargne CE_solde= new CompteEpargne();
 	//Constructeur
-    public DossierBancaire() {
-    	CC_solde = 0;
-    	CE_solde = 0;
-    }
+    public DossierBancaire() {}
 
     public void deposer(double value) {
     	CC_solde.setSolde(value*0.4);

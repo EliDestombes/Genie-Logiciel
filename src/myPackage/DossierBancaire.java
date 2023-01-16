@@ -17,3 +17,6 @@ public class DossierBancaire {
     public void remunerer() { CE_solde.RemunererCE();}
 	
 }
+
+
+///written by Eli Destombes and Enzo Pierre

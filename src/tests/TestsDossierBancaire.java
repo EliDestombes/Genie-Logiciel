@@ -25,6 +25,14 @@ public class TestsDossierBancaire {
 			CompteCourant compte=new CompteCourant();
 			compte.setSolde(100);
 			assertEquals(100,compte.getSolde(),0);
+			
+			CompteEpargne compteE=new CompteEpargne();
+			compteE.setSolde(100);
+			assertEquals(100,compteE.getSolde(),0);
+			
+		    dossier.remunerer();
+		    assertEquals(101.92,compteE.getSolde(),0);
+		    
 		}
 		
 	}
@@ -42,4 +50,7 @@ public class TestsDossierBancaire {
 			System.out.println("All tests finished successfully...");
 		}
 	}
+	
+	
+	
 }

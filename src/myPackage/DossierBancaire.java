@@ -14,6 +14,16 @@ public class DossierBancaire {
     }
     public double get_solde() {return (CC_solde.getSolde() + CE_solde.getSolde());}
     public void remunerer() { CE_solde.RemunererCE();}
+    
+    public void retirer(double value) throws Exception
+    {
+        if(CC_solde.getSolde()-value <0 ) {
+            throw new Exception("Pas assez d'argent");
+        }else {
+             CC_solde.setSolde(-value);
+        }
+
+    }
 	
 }
 

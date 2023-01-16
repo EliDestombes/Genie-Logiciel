@@ -11,6 +11,7 @@ public class Compte {
     public void setSolde(double value) {
         solde += value ; 
     }
+    
     public double getSolde() {
         return solde;
     }

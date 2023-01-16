@@ -33,6 +33,13 @@ public class TestsDossierBancaire {
 		    dossier.remunerer();
 		    assertEquals(101.92,compteE.getSolde(),0);
 		    
+		    
+		    try {
+	            dossier.retirer(10);
+	        } catch (Exception e) {
+
+	            e.printStackTrace();
+	        }
 		}
 		
 	}

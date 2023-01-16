@@ -3,11 +3,10 @@ package myPackage;
 public class DossierBancaire {
 	private CompteCourant CC_solde= new CompteCourant(); //creation compte courant
 	private CompteEpargne CE_solde= new CompteEpargne(); //creation compte epargne
+	
 	//Constructeur
-    public DossierBancaire() { //initialisation des soldes des comptes
-    	CC_solde = 0;
-    	CE_solde = 0;
-    }
+    public DossierBancaire() {}
+
 
     public void deposer(double value) { 
     	CC_solde.setSolde(value*0.4); //40% du montant envoyé au compte courant
